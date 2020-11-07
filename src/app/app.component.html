@@ -1,0 +1,24 @@
+<div ngbNav #nav="ngbNav" class="navbar">
+  <img class="logo" src="./../assets/logo.png">
+</div>
+<div class="container main">
+    <div class="first-article-wrapper row" style="height: 400px;" [routerLink]="['/article', { link: firstArticle.link }]">
+        <div class="first-article-thumbnail-container col-md-6" style="height: 405px;">
+          <img class="first-article-thumbnail" [src]="firstArticle.image" onError="this.src = '/assets/no_image.jpg'" >
+        </div>
+        <div class="first-article col-md-6" style="height: 405px;">
+          <div class="title">{{firstArticle.title}}</div>
+        </div>
+    </div>
+    <div class="articles-wrapper row" >
+      <div class="article-wrapper col-md-9" *ngFor="let article of articleList; let i = index"
+        style="height: 180px;" [routerLink]="['/article', article.link]">
+          <div class="article-thumbnail-container col-md-4" style="height: 180px;">
+            <img class="article-thumbnail" [src]="article.image" onError="this.src = '/assets/no_image.jpg'">
+          </div>
+          <div class="article col-md-8">
+            <div class="title">{{article.title}}</div>
+        </div>
+      </div>
+    </div>
+</div>
