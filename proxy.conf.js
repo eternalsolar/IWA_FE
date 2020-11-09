@@ -9,20 +9,20 @@ const HttpsProxyAgent = require('https-proxy-agent');
  * For more details and options, see https://github.com/angular/angular-cli#proxy-to-backend
  */
 const proxyConfig = [
-  // {
-  //   context: '/api',
-  //   pathRewrite: { '^/api': '' },
-  //   target: 'https://test-iwa.herokuapp.com/',
-  //   changeOrigin: true,
-  //   secure: true
-  // }
   {
     context: '/api',
-    pathRewrite: { '^/api': '/' },
-    target: 'http://localhost:3000',
-    changeOrigin: false,
-    secure: false
+    pathRewrite: { '^/api': '' },
+    target: 'https://test-iwa.herokuapp.com/',
+    changeOrigin: true,
+    secure: true
   }
+  // {
+  //   context: '/api',
+  //   pathRewrite: { '^/api': '/' },
+  //   target: 'http://localhost:3000',
+  //   changeOrigin: false,
+  //   secure: false
+  // }
 ];
 
 /*

@@ -13,18 +13,18 @@ import { ArticleService } from '../services/article.service';
 export class ArticleComponent implements OnInit {
     link: string;
     article: Article;
+    loading = false;
     constructor(private articleService: ArticleService, private spinner: NgxSpinnerService, private route: ActivatedRoute) { }
 
     ngOnInit(): void {
-        this.route.params.subscribe(params => {
+        this.route.queryParams.subscribe(params => {
             this.link = params['link'];
         });
-        console.log(this.link);
-
+        this.loading = true;
         this.spinner.show();
-        this.articleService.getArticle(this.link)
+        this.articleService.getArticle(encodeURIComponent(this.link))
             .pipe(
-                finalize(() => this.spinner.hide()),
+                finalize(() => {this.spinner.hide(); this.loading = false;}),
             )
             .subscribe((article: Article) => {
                 this.article = article;

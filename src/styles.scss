@@ -2,3 +2,45 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+.main {
+    padding-top: 60px;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+@include media-breakpoint-down(sm) {
+    .no-padding-xs{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@include media-breakpoint-between(sm, md) {
+    .no-padding-sm{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@include media-breakpoint-between(md, lg) {
+    .no-padding-md{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@include media-breakpoint-between(lg, xl) {
+    .no-padding-lg{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@include media-breakpoint-up(xl) {
+    .no-padding-xl{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

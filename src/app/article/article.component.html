@@ -1,3 +1,11 @@
-<div class="article container">
-    <div>{{article.title}}</div>
+<div class="container main" *ngIf="!loading && article">
+    <div class="article-wrapper col-12 col-lg-8">
+        <div class="article row">
+            <h1 class="title col-12 col-lg-12">{{article.title}}</h1>
+            <div class="thumbnail-wrapper col-12 col-lg-12">
+                <img class="thumbnail" [src]="article.image">
+            </div>
+            <h5 class="content col-12 col-lg-12" [innerHtml]="article.content"></h5>
+        </div>
+    </div>
 </div>

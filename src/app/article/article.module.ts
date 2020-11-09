@@ -1,21 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-
+import { NgModule } from '@angular/core';
 import { ArticleComponent } from './article.component';
 import { ArticleService } from '../services/article.service';
 import { ArticleRoutingModule } from './article-rounting.module';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     ArticleComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     ArticleRoutingModule,
-    HttpClientModule,
+    NgxSpinnerModule
   ],
-  providers: [ArticleService],
-  bootstrap: [ArticleRoutingModule]
+  providers: [ArticleService]
 })
 export class ArticleModule { }
