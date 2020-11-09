@@ -6,7 +6,7 @@ import { Article } from '../models/article.model';
 
 const routes = {
     getArticles: (page: number) => `https://test-iwa.herokuapp.com/${page}`,
-    getArticle: (link: string) => `https://test-iwa.herokuapp.com/${link}`
+    getArticle: (link: string) => `https://test-iwa.herokuapp.com/article/${link}`
 }
 @Injectable()
 export class ArticleService {
@@ -14,16 +14,16 @@ export class ArticleService {
 
     getArticles(page: number): Observable<any> {
         return this.httpClient.get(routes.getArticles(page))
-        .pipe(
-            map((body: any) => body),
-            catchError(() => throwError('Error'))
-        );  
+            .pipe(
+                map((body: any) => body),
+                catchError(() => throwError('Error'))
+            );
     }
     getArticle(link: string): Observable<any> {
         return this.httpClient.get(routes.getArticle(link))
-        .pipe(
-            map((body: any) => body),
-            catchError(() => throwError('Error'))
-        );  
+            .pipe(
+                map((body: any) => body),
+                catchError(() => throwError('Error'))
+            );
     }
 }

@@ -31,6 +31,9 @@ export class ArticleComponent implements OnInit {
 
             })
     }
+    goToSource(): void {
+        location.href = this.article.link;
+    }
 
 
 }

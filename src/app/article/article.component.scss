@@ -7,21 +7,18 @@
         .title {
             color: rgb(17, 17, 17);
             font-family: Montserrat;
-            font-size: 36px;
             font-weight: 700;
-            line-height: 43.2px;
+        }
+        .link {
+            cursor: pointer;
         }
         .thumbnail {
             width: 100%;
-            margin-top: 50px;
         }
         .content{
-            margin-top: 50px;
             font-family: Roboto;
             color: rgb(68,68,68);
-            font-size: 15px;
             font-weight: 400;
-            line-height: 25.5px;
             text-align: justify;
         }
     }
@@ -35,6 +32,9 @@
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 22.2px;
+            }
+            .link {
+                font-size: 12px;
             }
             .thumbnail {
                 margin-top: 20px;
@@ -58,6 +58,9 @@
                 font-weight: 700;
                 line-height: 43.2px;
             }
+            .link {
+                font-size: 15px;
+            }
             .thumbnail {
                 margin-top: 30px;
             }
@@ -79,6 +82,9 @@
                 font-size: 36px;
                 font-weight: 700;
                 line-height: 43.2px;
+            }
+            .link {
+                font-size: 18px;
             }
             .thumbnail {
                 margin-top: 50px;

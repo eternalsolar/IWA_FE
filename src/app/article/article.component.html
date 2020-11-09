@@ -2,8 +2,9 @@
     <div class="article-wrapper col-12 col-lg-8">
         <div class="article row">
             <h1 class="title col-12 col-lg-12">{{article.title}}</h1>
+            <h5 class="link col-12 col-lg-12" (click)="goToSource()">Click to move to the original page</h5>
             <div class="thumbnail-wrapper col-12 col-lg-12">
-                <img class="thumbnail" [src]="article.image">
+                <img class="thumbnail" [src]="article.image" onError="this.style.display='none'">
             </div>
             <h5 class="content col-12 col-lg-12" [innerHtml]="article.content"></h5>
         </div>
