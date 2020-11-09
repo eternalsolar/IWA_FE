@@ -1,5 +1,5 @@
 var express = require('express');
-var proxy = require('./../../proxy.conf');
+var proxy = require('./proxy.conf');
 var app = express();
 
 app.use(express.static(__dirname + '/dist'));
