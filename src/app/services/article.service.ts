@@ -5,8 +5,8 @@ import { catchError, retry, map } from 'rxjs/operators';
 import { Article } from '../models/article.model';
 
 const routes = {
-    getArticles: (page: number) => `/api${page}`,
-    getArticle: (link: string) => `/api/article/${link}`
+    getArticles: (page: number) => `https://test-iwa.herokuapp.com/${page}`,
+    getArticle: (link: string) => `https://test-iwa.herokuapp.com/${link}`
 }
 @Injectable()
 export class ArticleService {
