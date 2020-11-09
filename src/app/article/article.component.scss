@@ -24,7 +24,7 @@
     }
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     .main {
         margin-top: 30px;
         .article {
@@ -49,7 +49,7 @@
         }
     }
 }
-@include media-breakpoint-between(sm, lg) {
+@include media-breakpoint-between(md, lg) {
     .main {
         margin-top: 80px;
         .article {

@@ -39,7 +39,7 @@
         }
     }
 }
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
     .header {
         .navbar {
             .navbar-toggler{
@@ -78,7 +78,7 @@
         height: 40px;
     }
 }
-@include media-breakpoint-between(sm, lg) {
+@include media-breakpoint-between(md, lg) {
     .overlay-btn {
         bottom: 80px;
         right: 30px;

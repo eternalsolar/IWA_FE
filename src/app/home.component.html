@@ -13,10 +13,10 @@
     </div>
     <div class="articles-wrapper row" >
       <div class="article-wrapper col-12 col-lg-10" *ngFor="let article of articleList; let i = index" >
-          <div class="article-thumbnail-container col-12 col-sm-4 col-md-3 col-lg-4">
+          <div class="article-thumbnail-container col-12 col-md-3 col-lg-4">
             <img class="article-thumbnail" [src]="article.image" onError="this.src = '/assets/no_image.jpg'" (click)="readArticle(article)">
           </div>
-          <div class="article no-padding-xs col-12 col-sm-8 col-md-9 col-lg-8">
+          <div class="article no-padding-xs col-12 col-md-9 col-lg-8">
             <div class="title" (click)="readArticle(article)">{{article.title}}</div>
             <div class="excerpt" [innerHtml]="article.excerpt"></div>
         </div>

@@ -3,7 +3,6 @@
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
 
 .main {
-    
     .first-article-wrapper {
         .first-article-thumbnail-container {
             .first-article-thumbnail {
@@ -29,7 +28,7 @@
             }
         }
     }
-    
+
     .article-wrapper {
         display: inline-flex;
         margin-top: 50px;
@@ -61,85 +60,6 @@
     }
 }
 
-
-@include media-breakpoint-down(sm) {
-    .main {
-        margin-top: 30px;
-        .first-article-wrapper{
-            height: 400px;
-            .first-article-thumbnail-container{
-                height: 200px;
-            }
-            .first-article {
-                height: 200px;
-                margin-top: 20px;
-                .title{
-                    line-height: 16.8px;
-                    font-size: 18px;
-                }
-                .excerpt{
-                    font-size: 12px;
-                }
-            }
-        }
-        .article-wrapper{
-            height: 300px;
-            display: inline-block;
-            .article-thumbnail-container{
-                height: 150px;
-            }
-            .article{
-                margin-top: 20px;
-                .title{
-                    line-height: 16.8px;
-                    height: 40px;
-                    font-size: 16px;
-                }
-                .excerpt{
-                    font-size: 11px;
-                }
-            }
-        }
-        
-    }
-}
-@include media-breakpoint-between(sm, lg) {
-    .main {
-        margin-top: 80px;
-        .first-article-wrapper{
-            height: 600px;
-            .first-article-thumbnail-container{
-                height: 400px;
-            }
-            .first-article {
-                height: 200px;
-                .title{
-                    font-size: 22px;
-                }
-                .excerpt{
-                    font-size: 13px;
-                }
-            }
-        }
-        .article-wrapper{
-            height: 140px;
-            .article-thumbnail-container{
-                height: 140px;
-            }
-            .article{
-                .title{
-                    line-height: 24.8px;
-                    height: 50px;
-                    font-size: 20px;
-                }
-                .excerpt{
-                    font-size: 12px;
-                }
-            }
-        }
-        
-    }
-}
 @include media-breakpoint-up(lg) {
     .main {
         margin-top: 80px;
@@ -147,9 +67,8 @@
             height: 400px;
             .first-article-thumbnail-container {
                 height: 400px;
-                
             }
-    
+
             .first-article {
                 .title {
                     font-size: 24px;
@@ -159,7 +78,7 @@
                 }
             }
         }
-        
+
         .article-wrapper {
             height: 180px;
             .article-thumbnail-container {
@@ -183,3 +102,116 @@
     }
 }
 
+@include media-breakpoint-down(lg) {
+    .main {
+        margin-top: 80px;
+        .first-article-wrapper {
+            height: 400px;
+            .first-article-thumbnail-container {
+                height: 400px;
+            }
+            .first-article {
+                height: 400px;
+                .title {
+                    font-size: 22px;
+                }
+                .excerpt {
+                    font-size: 13px;
+                }
+            }
+        }
+        .article-wrapper {
+            height: 140px;
+            .article-thumbnail-container {
+                height: 140px;
+            }
+            .article {
+                .title {
+                    line-height: 24.8px;
+                    height: 50px;
+                    font-size: 20px;
+                }
+                .excerpt {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .main {
+        margin-top: 80px;
+        .first-article-wrapper {
+            height: 600px;
+            .first-article-thumbnail-container {
+                height: 400px;
+            }
+            .first-article {
+                height: 200px;
+                .title {
+                    font-size: 22px;
+                }
+                .excerpt {
+                    font-size: 13px;
+                }
+            }
+        }
+        .article-wrapper {
+            height: 140px;
+            .article-thumbnail-container {
+                height: 140px;
+            }
+            .article {
+                .title {
+                    line-height: 24.8px;
+                    height: 50px;
+                    font-size: 20px;
+                }
+                .excerpt {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .main {
+        margin-top: 30px;
+        .first-article-wrapper {
+            height: 400px;
+            .first-article-thumbnail-container {
+                height: 200px;
+            }
+            .first-article {
+                height: 200px;
+                margin-top: 20px;
+                .title {
+                    line-height: 16.8px;
+                    font-size: 18px;
+                }
+                .excerpt {
+                    font-size: 12px;
+                }
+            }
+        }
+        .article-wrapper {
+            height: 300px;
+            display: inline-block;
+            .article-thumbnail-container {
+                height: 150px;
+            }
+            .article {
+                margin-top: 20px;
+                .title {
+                    line-height: 16.8px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+                .excerpt {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
