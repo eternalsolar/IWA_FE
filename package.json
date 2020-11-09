@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "heroku-postbuild": "npm install",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "ng build --aot --prod",
     "ng": "ng",
     "start": "ng serve --aot --proxy-config proxy.conf.js",
     "build": "ng build",
@@ -13,12 +13,12 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~10.2.0",
-    "@angular/compiler-cli": "~10.2.0",
     "@angular/animations": "~10.2.0",
     "@angular/cdk": "^10.2.7",
+    "@angular/cli": "~10.2.0",
     "@angular/common": "~10.2.0",
     "@angular/compiler": "~10.2.0",
+    "@angular/compiler-cli": "~10.2.0",
     "@angular/core": "~10.2.0",
     "@angular/forms": "~10.2.0",
     "@angular/localize": "~10.2.0",
